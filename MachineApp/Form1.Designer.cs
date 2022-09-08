@@ -1,7 +1,7 @@
 ﻿
 namespace MachineApp
 {
-    partial class Form1
+    partial class InventoryPage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,17 @@ namespace MachineApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // InventoryPage
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(895, 717);
+            this.Name = "InventoryPage";
+            this.Text = "Machine Inventory";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

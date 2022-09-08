@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MachineApp
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class InventoryPage : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public InventoryPage()
         {
             InitializeComponent();
         }
