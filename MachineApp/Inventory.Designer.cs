@@ -1,7 +1,7 @@
 ﻿
 namespace MachineApp
 {
-    partial class InventoryPage
+    partial class InventoryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,12 +31,12 @@ namespace MachineApp
         {
             this.SuspendLayout();
             // 
-            // InventoryPage
+            // InventoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 717);
-            this.Name = "InventoryPage";
+            this.Name = "InventoryForm";
             this.Text = "Machine Inventory";
             this.ResumeLayout(false);
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MachineApp
 {
-    public partial class Return : MetroFramework.Forms.MetroForm
+    public partial class ReturnForm : MetroFramework.Forms.MetroForm
     {
-        public Return()
+        public ReturnForm()
         {
             InitializeComponent();
         }

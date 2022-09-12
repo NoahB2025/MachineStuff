@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace MachineApp
 {
-    public partial class CheckOutForm : MetroFramework.Forms.MetroForm
+    public partial class LoginForm : MetroFramework.Forms.MetroForm
     {
-        public CheckOutForm()
+        public LoginForm()
         {
             InitializeComponent();
         }
+
+
     }
 }
