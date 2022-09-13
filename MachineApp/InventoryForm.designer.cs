@@ -1,7 +1,7 @@
 ﻿
 namespace MachineShopInventoryPage
 {
-    partial class Form1
+    partial class Inventory
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@ namespace MachineShopInventoryPage
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.InventoryList = new System.Windows.Forms.ListBox();
             this.btnSignin = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -41,15 +40,6 @@ namespace MachineShopInventoryPage
             this.btnSignout = new System.Windows.Forms.Button();
             this.btnCheckedout = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Inventory";
             // 
             // InventoryList
             // 
@@ -147,7 +137,7 @@ namespace MachineShopInventoryPage
             this.btnCheckedout.UseVisualStyleBackColor = true;
             this.btnCheckedout.Click += new System.EventHandler(this.btnCheckedout_Click);
             // 
-            // Form1
+            // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -162,18 +152,14 @@ namespace MachineShopInventoryPage
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.InventoryList);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Inventory";
+            this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox InventoryList;
         private System.Windows.Forms.Button btnSignin;
         private System.Windows.Forms.Button btnSearch;
