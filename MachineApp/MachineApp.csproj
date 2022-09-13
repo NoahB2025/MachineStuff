@@ -61,6 +61,12 @@
     <Compile Include="CheckOutForm.designer.cs">
       <DependentUpon>CheckOutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddWindowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWindowForm.Designer.cs">
+      <DependentUpon>AddWindowForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddWindowForm.resx">
+      <DependentUpon>AddWindowForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CheckOutForm.resx">
       <DependentUpon>CheckOutForm.cs</DependentUpon>
     </EmbeddedResource>
