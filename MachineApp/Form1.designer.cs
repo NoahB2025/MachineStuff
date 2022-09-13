@@ -39,6 +39,7 @@ namespace MachineShopInventoryPage
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSignout = new System.Windows.Forms.Button();
+            this.btnCheckedout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -136,11 +137,22 @@ namespace MachineShopInventoryPage
             this.btnSignout.UseVisualStyleBackColor = true;
             this.btnSignout.Click += new System.EventHandler(this.btnSignout_Click);
             // 
+            // btnCheckedout
+            // 
+            this.btnCheckedout.Location = new System.Drawing.Point(627, 43);
+            this.btnCheckedout.Name = "btnCheckedout";
+            this.btnCheckedout.Size = new System.Drawing.Size(107, 34);
+            this.btnCheckedout.TabIndex = 10;
+            this.btnCheckedout.Text = "Checked-out";
+            this.btnCheckedout.UseVisualStyleBackColor = true;
+            this.btnCheckedout.Click += new System.EventHandler(this.btnCheckedout_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1095, 512);
+            this.Controls.Add(this.btnCheckedout);
             this.Controls.Add(this.btnSignout);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -171,6 +183,7 @@ namespace MachineShopInventoryPage
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnSignout;
+        private System.Windows.Forms.Button btnCheckedout;
     }
 }
 

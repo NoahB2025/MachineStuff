@@ -34,6 +34,7 @@ namespace MachineShopInventoryPage
             btnRemove.Hide();
             btnSignout.Hide();
             btnSignin.Show();
+            btnCheckedout.Hide();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -48,11 +49,17 @@ namespace MachineShopInventoryPage
             btnAdd.Show();
             btnEdit.Show();
             btnRemove.Show();
+            btnCheckedout.Show();
         }
 
         private void btnSignout_Click(object sender, EventArgs e)
         {
             Student_Intvy_Page();
+        }
+
+        private void btnCheckedout_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
