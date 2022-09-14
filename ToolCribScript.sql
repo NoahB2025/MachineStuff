@@ -21,9 +21,7 @@ CREATE TABLE [dbo].[inUseTbl] (
     [toolId]    INT  NOT NULL,
     [accountId] INT  NOT NULL,
     [date]      DATE NOT NULL,
-    PRIMARY KEY CLUSTERED ([id] ASC),
-    CONSTRAINT [FK_inUseTbl_accountTbl] FOREIGN KEY ([accountId]) REFERENCES [dbo].[accountTbl] ([id]),
-    CONSTRAINT [FK_inUseTbl_toolTbl] FOREIGN KEY ([toolId]) REFERENCES [dbo].[toolTbl] ([id])
+    PRIMARY KEY CLUSTERED ([id] ASC)
 );
 
 CREATE TABLE [dbo].[programTbl] (
@@ -40,7 +38,16 @@ CREATE TABLE [dbo].[toolTbl] (
     [categoryId] INT          NULL,
     [programId]  INT          NULL,
     PRIMARY KEY CLUSTERED ([id] ASC),
-    CONSTRAINT [FK_toolTbl_categoryTbl] FOREIGN KEY ([categoryId]) REFERENCES [dbo].[categoryTbl] ([id]),
-    CONSTRAINT [FK_toolTbl_programTbl] FOREIGN KEY ([programId]) REFERENCES [dbo].[programTbl] ([id])
 );
+
+ALTER TABLE [dbo].[inUseTbl]
+    ADD CONSTRAINT [FK_inUseTbl_accountTbl] FOREIGN KEY ([accountId]) REFERENCES [dbo].[accountTbl] ([id]);
+ALTER TABLE [dbo].[inUseTbl]
+    ADD CONSTRAINT [FK_inUseTbl_toolTbl] FOREIGN KEY ([toolId]) REFERENCES [dbo].[toolTbl] ([id]);
+
+
+ALTER TABLE [dbo].[toolTbl]
+    ADD CONSTRAINT [FK_toolTbl_categoryTbl] FOREIGN KEY ([categoryId]) REFERENCES [dbo].[categoryTbl] ([id]);
+ALTER TABLE [dbo].[toolTbl]
+    ADD CONSTRAINT [FK_toolTbl_programTbl] FOREIGN KEY ([programId]) REFERENCES [dbo].[programTbl] ([id]);
 
