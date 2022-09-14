@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace MachineApp
 {
-    public partial class Search : MetroFramework.Forms.MetroForm
+    public partial class Edit : MetroFramework.Forms.MetroForm
     {
-        public Search()
+        public Edit()
         {
             InitializeComponent();
         }
