@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MachineApp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,6 +61,12 @@ namespace MachineShopInventoryPage
         private void btnCheckedout_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddWindowForm addWindow = new AddWindowForm();
+            addWindow.Show();
         }
     }
 }

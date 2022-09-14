@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MachineApp;
 
 namespace MachineApp
 {
@@ -19,10 +20,10 @@ namespace MachineApp
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-            CheckOutForm check = new CheckOutForm();
-            this.Hide();
-            check.ShowDialog();
-            this.Close();
+            //CheckOutForm check = new CheckOutForm();
+            //this.Hide();
+            //check.ShowDialog();
+            //this.Close();
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
