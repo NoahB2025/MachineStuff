@@ -67,11 +67,23 @@
     <Compile Include="AddWindowForm.Designer.cs">
       <DependentUpon>AddWindowForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConfirmRemovalOfTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmRemovalOfTool.Designer.cs">
+      <DependentUpon>ConfirmRemovalOfTool.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InventoryForm.designer.cs">
       <DependentUpon>InventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRemovedSuccessfully.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRemovedSuccessfully.Designer.cs">
+      <DependentUpon>ItemRemovedSuccessfully.cs</DependentUpon>
     </Compile>
     <Compile Include="SearchForm.cs">
       <SubType>Form</SubType>
@@ -111,8 +123,14 @@
     <EmbeddedResource Include="CheckOutForm.resx">
       <DependentUpon>CheckOutForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmRemovalOfTool.resx">
+      <DependentUpon>ConfirmRemovalOfTool.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InventoryForm.resx">
       <DependentUpon>InventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRemovedSuccessfully.resx">
+      <DependentUpon>ItemRemovedSuccessfully.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchForm.resx">
       <DependentUpon>SearchForm.cs</DependentUpon>
