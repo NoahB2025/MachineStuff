@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MachineShopInventoryPage
+namespace MachineApp
 {
-    public partial class Inventory : MetroFramework.Forms.MetroForm
+    public partial class InventoryForm : MetroFramework.Forms.MetroForm
     {
-        public Inventory()
+        public InventoryForm()
         {
             InitializeComponent();
         }

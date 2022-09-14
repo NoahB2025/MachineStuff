@@ -1,7 +1,7 @@
 ﻿
-namespace CheckoutPage
+namespace MachineApp
 {
-	partial class Form1
+	partial class CheckOutForm
 	{
 		/// <summary>
 		/// Required designer variable.

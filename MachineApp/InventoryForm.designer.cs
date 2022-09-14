@@ -1,7 +1,7 @@
 ﻿
-namespace MachineShopInventoryPage
+namespace MachineApp
 {
-    partial class Inventory
+    partial class InventoryForm
     {
         /// <summary>
         /// Required designer variable.

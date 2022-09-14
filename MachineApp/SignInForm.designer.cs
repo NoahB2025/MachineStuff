@@ -1,7 +1,7 @@
 ﻿
-namespace SignInInventoryWindow
+namespace MachineApp
 {
-	partial class Form1
+	partial class SignInForm
 	{
 		/// <summary>
 		/// Required designer variable.
