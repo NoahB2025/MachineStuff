@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MachineApp;
 
 namespace MachineApp
 {
@@ -19,7 +20,7 @@ namespace MachineApp
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
