@@ -19,18 +19,12 @@ namespace MachineApp
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-            CheckOutForm check = new CheckOutForm();
-            this.Hide();
-            check.ShowDialog();
-            this.Close();
+            
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            ReturnForm ret = new ReturnForm();
-            this.Hide();
-            ret.ShowDialog();
-            this.Close();
+            
         }
 
         private void WelcomeForm_Load(object sender, EventArgs e)
@@ -40,10 +34,7 @@ namespace MachineApp
 
         private void btnInventory_Click(object sender, EventArgs e)
         {
-            InventoryForm inv = new InventoryForm();
-            this.Hide();
-            inv.ShowDialog();
-            this.Close();
+            
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
