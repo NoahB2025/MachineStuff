@@ -16,5 +16,10 @@ namespace MachineApp
         {
             InitializeComponent();
         }
+
+        private void CheckOutForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
