@@ -1,5 +1,4 @@
-﻿using MachineApp;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +13,7 @@ namespace MachineApp
 {
     public partial class InventoryForm : MetroFramework.Forms.MetroForm
     {
+        SqlConnection conn = new SqlConnection(@"");
         //SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ToolCrib;Integrated Security=True");
         public InventoryForm()
         {
@@ -42,7 +42,23 @@ namespace MachineApp
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "remove from [CheckOutForm] where ToolID'" + txt_ToolID.Text + "'";
+            cmd.ExecuteNonQuery();
+            conn.Close();
 
+            txt_ToolID.Text = "";
+            txt_Name.Text = "";
+            txt_Instructor.Text = "";
+            txt_Date.Text = "";
+
+            btnAdd.Enabled = true;
+            btnEdit.Enabled = true;
+            btnRemove.Enabled = false;
+
+            MessageBox.Show("Data Removed successfully");
         }
 
         private void btnSignin_Click(object sender, EventArgs e)
@@ -67,20 +83,37 @@ namespace MachineApp
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            //conn.Open();
-            //SqlCommand cmd = conn.CreateCommand();
-            //cmd.CommandType = CommandType.Text;
-            //cmd.CommandText = "Edit [] set ____='" +  "";
+            conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Edit [toolTbl] set name='" + txt_name.text "";
 
-            //cmd.ExecuteNonQuery();
-            //conn.Close();
+            cmd.ExecuteNonQuery();
+            conn.Close();
             //display_data();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnSearch_Click_1(object sender, EventArgs e)
         {
-            AddWindowForm addWindow = new AddWindowForm();
-            addWindow.Show();
+            conn.Open();
+            string search = btnSearch.Text;
+            SqlCommand sqcmd = new SqlCommand("Select * from [CheckOutForm] where Name like '%" + search + "%' OR Instructor like '%" + search + "%' OR Date like '%", conn);
+            SqlDataAdapter da = new SqlDataAdapter(sqcmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+
+
+            if (dt.Rows.Count > 0)
+            {
+                InventoryList.DataSource = dt;
+                conn.Close();
+            }
+            else
+            {
+                MessageBox.Show("No Record found");
+                conn.Close();
+            }
         }
     }
 }
