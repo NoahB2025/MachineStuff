@@ -116,6 +116,7 @@ namespace MachineApp
             this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSignout
             // 
@@ -137,7 +138,7 @@ namespace MachineApp
             this.btnCheckedout.UseVisualStyleBackColor = true;
             this.btnCheckedout.Click += new System.EventHandler(this.btnCheckedout_Click);
             // 
-            // Inventory
+            // InventoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,7 +153,7 @@ namespace MachineApp
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.InventoryList);
-            this.Name = "Inventory";
+            this.Name = "InventoryForm";
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
