@@ -78,6 +78,10 @@
     </Compile>
     <Compile Include="ConfirmRemovalOfTool.Designer.cs">
       <DependentUpon>ConfirmRemovalOfTool.cs</DependentUpon>
+    <Compile Include="hafsayDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hafsayDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="InventoryForm.cs">
       <SubType>Form</SubType>
@@ -165,6 +169,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="hafsayDataSet.xsc">
+      <DependentUpon>hafsayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hafsayDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hafsayDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hafsayDataSet.xss">
+      <DependentUpon>hafsayDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
