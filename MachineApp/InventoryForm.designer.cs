@@ -1,7 +1,7 @@
 ﻿
-namespace MachineShopInventoryPage
+namespace MachineApp
 {
-    partial class Inventory
+    partial class InventoryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -117,6 +117,7 @@ namespace MachineShopInventoryPage
             this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSignout
             // 
@@ -138,7 +139,7 @@ namespace MachineShopInventoryPage
             this.btnCheckedout.UseVisualStyleBackColor = true;
             this.btnCheckedout.Click += new System.EventHandler(this.btnCheckedout_Click);
             // 
-            // Inventory
+            // InventoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,7 +154,7 @@ namespace MachineShopInventoryPage
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.InventoryList);
-            this.Name = "Inventory";
+            this.Name = "InventoryForm";
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
