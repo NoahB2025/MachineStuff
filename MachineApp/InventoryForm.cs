@@ -27,7 +27,23 @@ namespace MachineApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'hafsayDataSet.toolTbl' table. You can move, or remove it, as needed.
+            this.toolTblTableAdapter.Fill(this.hafsayDataSet.toolTbl);
             Student_Intvy_Page();
+        }
+
+        public void display_data()
+        {
+            conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from [toolTbl]";
+            cmd.ExecuteNonQuery();
+            DataTable dta = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dta);
+            dataGridView1.DataSource = dta;
+            conn.Close();
         }
 
         public void Student_Intvy_Page()
@@ -82,6 +98,7 @@ namespace MachineApp
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
@@ -93,6 +110,7 @@ namespace MachineApp
             //display_data();
         }
 
+        private void btn_displayAll_Click(object sender, EventArgs e)
         private void btnSearch_Click_1(object sender, EventArgs e)
         {
             conn.Open();
