@@ -17,14 +17,16 @@ namespace MachineApp
             InitializeComponent();
         }
 
+        
+
         private void AddWindowForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnAddItem_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Item added successfully");
         }
     }
 }

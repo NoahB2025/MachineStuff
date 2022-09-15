@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace MachineApp
 {
-    public partial class Search : MetroFramework.Forms.MetroForm
-    {
-        public Search()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class ItemRemovedSuccessfully : MetroFramework.Forms.MetroForm
+	{
+		public ItemRemovedSuccessfully()
+		{
+			InitializeComponent();
+		}
+	}
 }
