@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CheckoutPage
+namespace MachineApp
 {
-	public partial class Form1 : Form
-	{
-		public Form1()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class CheckOutForm : Form
+    {
+        public CheckOutForm()
+        {
+            InitializeComponent();
+        }
+
+        private void CheckOutForm_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
